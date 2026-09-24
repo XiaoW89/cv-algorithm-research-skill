@@ -2,6 +2,14 @@
 
 Select a practical model family using evidence and constraints.
 
+Use the recorded [method-research assessment and user choice](../best-practice/SKILL.md#existing-research-and-user-choice).
+If research was deferred or skipped, state that the selection is limited to the available
+evidence/candidates; do not present the missing survey as complete or silently start it.
+Check the [research evidence reconciliation status](../best-practice/SKILL.md#research-evidence-reconciliation).
+Do not make a `PENDING_VERIFICATION` candidate the sole basis of a selection. A `PARTIAL`
+survey may support only a provisional selection with its missing evidence, fallback, and
+decision-changing checks recorded.
+
 Evaluate:
 
 - task fit

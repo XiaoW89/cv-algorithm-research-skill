@@ -6,13 +6,26 @@ are evidence requirements, not mandatory user approval meetings or a fixed quest
 ## Full project
 
 Clarify → define requirements and provisional evaluation → preliminary feasibility →
-research methods/data → refine feasibility and plan → audit/prepare data → choose and
+research methods/data within agreed scope → refine feasibility and plan → audit/prepare data → choose and
 integrate a reproducible baseline → sanity checks → train → validate → analyze errors →
 bounded experiments → freeze candidate/protocol → final test → handoff.
 
 Method and data discovery inform each other. Feasibility may permit a bounded pilot
 before final targets are known. A baseline usually reuses existing code; custom model
 development is conditional on evidence, not a mandatory precursor to every baseline.
+
+On project intake or takeover, inspect existing `research/` method records before new
+discovery. Apply [research sufficiency and user choice](skills/best-practice/SKILL.md#existing-research-and-user-choice):
+reuse sufficient evidence; otherwise explain the gaps and let the user choose whether
+to research now, defer, or skip. An explicit research request already supplies that
+choice. This is not a mandatory research gate: a deferral or skip limits the selection
+evidence, not permission to continue otherwise authorized work.
+
+Method research is not complete merely because a search log and candidate list exist.
+Before using it for selection or implementation, reconcile source identity, evidence
+depth, code/weight/license facts, and claim-to-protocol mapping. Record the outcome as
+`SUFFICIENT`, `PARTIAL`, `INSUFFICIENT`, or `PENDING_VERIFICATION`; unresolved
+decision-critical contradictions keep the affected selection provisional.
 
 ## Gates
 
@@ -64,5 +77,8 @@ finished without declaring the whole model project complete.
 
 Read state, recover current artifacts, verify running jobs/checkpoints and budgets, then
 continue the relevant `next_action`. Do not relaunch a job solely because a record is old.
+Recover the method-research assessment and user choice too; if never assessed, perform
+the intake check above. Revisit only when task/constraint changes or new evidence make
+the previous assessment or choice inapplicable, not merely because a session resumed.
 Changed labels, data splits, or metric definitions require a versioned protocol update,
 invalidating affected gates and re-evaluating the baseline before claiming improvement.

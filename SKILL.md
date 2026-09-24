@@ -39,11 +39,22 @@ Keep the best observed candidate distinct from the best candidate that meets req
 3. Distinguish a full model-development project from a narrow question, review, or
    single-stage request. For a read-only question, do not initialize a project or
    require unrelated stages. Existing evidence may already satisfy a gate.
-4. Read the relevant stage instructions below. Ask only for unknowns that materially
-   affect the next decision; continue independent, inexpensive work where possible.
-5. When project artifacts are needed, initialize missing files using the helper below.
+4. When taking on a model-development project, inspect `research/` for existing method
+   research, following [the research sufficiency and user-choice procedure](skills/best-practice/SKILL.md#existing-research-and-user-choice).
+   Reuse adequate evidence; if missing or insufficient, explain the gaps and ask whether
+   to conduct algorithm research before starting external discovery. Reuse an explicit
+   research request or a recorded choice within its scope; do not repeat the question
+   on every resume or force research onto an unrelated single-stage request.
+5. Before relying on method research for model selection, reconcile the research log's
+   claims with the retrieved source records and artifact metadata. Follow the
+   [evidence reconciliation procedure](skills/best-practice/SKILL.md#research-evidence-reconciliation);
+   unresolved contradictions limit the claim and may require user-visible verification.
+6. Read the relevant stage instructions below and match the current subtask to
+   [available external capabilities](#external-capabilities). Ask only for unknowns
+   that materially affect the next decision; continue independent, inexpensive work.
+7. When project artifacts are needed, initialize missing files using the helper below.
    Never overwrite or silently migrate existing research history.
-6. Execute the smallest useful action, check its stage gate, and record the result.
+8. Execute the smallest useful action, check its stage gate, and record the result.
    Update `STATE.md` after meaningful project work; keep details in linked artifacts.
 
 ## Stage routing
@@ -101,19 +112,35 @@ Do not claim superiority across incompatible data, metrics, protocols, or resour
 
 ## External capabilities
 
-Discover available tools/skills in the current environment; names and availability
-may differ between installations. If available and relevant:
+Proactively select skills for the current subtask; do not require the user to name them.
+Apply this across all stages, not just literature research:
 
-- `arxiv-agent-markdown`: ingest a known arXiv paper and its figures, not general search.
-- `research-agent`: source-grounded investigation or claim verification.
-- `ai-research`: deeper experiment-design or reproducibility support.
-- Framework-specific skills: only after the framework/task is actually selected.
+1. Identify the immediate capability needed, inputs, expected output, and constraints.
+   Inspect the current environment's available skill catalog and descriptions; do not
+   assume every skill installed on disk is exposed or usable in this session.
+2. Match descriptions and exclusions to that need, respecting host invocation rules
+   and explicit user choices. Choose one primary skill per capability; overlapping
+   descriptions are alternatives, not a reason to run them all. Combine same-purpose
+   skills only for a concrete need, such as a coverage gap or necessary independent
+   verification, and explain the need and distinct roles before doing so. Otherwise use
+   only complementary capabilities. Do not hard-code preferred names, a fixed call
+   chain, or select by name alone. Reassess when the subtask or available capabilities
+   change, not on every tool call.
+3. Announce the selected skills and why, then read their full instructions and required
+   references before using them. Check actual task fit, prerequisites, and cost; do not
+   load every installed skill in full. If a candidate proves unsuitable, explain and
+   choose a fitting alternative rather than silently bypassing its requirements.
+4. Keep execution within the user's goal, scope, budget, and authorization. Selecting a
+   skill does not authorize its actions: preserve the research-now/defer/skip choice
+   and ask before a material expansion. Do not let a specialist workflow redefine the
+   engineering goal as academic novelty or unrelated work.
 
-Use available search/retrieval tools for discovery and inspect primary papers, official
-code, checkpoint releases, and dataset documentation. If access is unavailable, report
-the missing verification and continue work that does not depend on it. Do not fabricate
-retrieval or require installing an optional skill to proceed. This workflow owns the
-engineering decision and must not expand into academic novelty work by default.
+Integrate outputs into the relevant project artifacts with evidence and limitations.
+Briefly record the skill used and its purpose in the relevant work log, including any
+important fallback. If no suitable skill is available, use available tools directly
+where feasible and disclose the gap; do not fabricate usage or require installation.
+For external research, verify primary papers, official code, checkpoint releases, and
+dataset documentation; report inaccessible evidence and continue independent work.
 
 ## Helpers
 
