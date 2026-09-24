@@ -42,11 +42,19 @@ Do not collapse this into a single score.
 
 ## Output
 
-Write:
+Write only artifacts useful to the decision:
 
 - `research/literature/search-log.md`
-- `research/literature/paper-matrix.md`
-- `research/literature/taxonomy.md`
 - `research/models/candidates.md`
+
+Use [search template](../../templates/search.md) and
+[selection template](../../templates/selection.md). Add a paper matrix or taxonomy only
+when the candidate set warrants it; do not produce duplicate catalogs by default.
+
+Record queries, date, primary URLs/identifiers, code revision/release, retrieved evidence,
+and access limitations. Verify claimed code/checkpoint availability and license separately
+from paper results. Search task and domain requirements, not just fashionable model names.
+Stop when enough grounded alternatives exist for a baseline decision or the agreed
+research budget is exhausted. Unverified candidates may remain proposals, never facts.
 
 Use external research skills for paper retrieval/deep reading when available.

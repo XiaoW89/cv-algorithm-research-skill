@@ -27,3 +27,10 @@ For every dataset, explicitly distinguish:
 - unsuitable
 
 Never call a dataset “suitable” merely because its name contains the target task.
+
+Compare coverage against the actual input, label taxonomy, operating conditions, and
+generalization unit. Public data may support pretraining without being suitable for
+final evaluation. When gaps matter, plan targeted collection, annotation/quality checks,
+or relabeling with cost estimates; do not assume augmentation closes a domain gap.
+Preserve annotation provenance, ambiguity/ignore rules, source licensing, and test data
+isolation. Use [dataset template](../../templates/dataset.md).

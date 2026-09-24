@@ -1,11 +1,13 @@
 # Research State
 
 ```yaml
+schema_version: 1
 project:
   name:
-  status: INTAKE
+  status: ACTIVE
   created:
   last_updated:
+  outcome:
 
 problem:
   task:
@@ -14,6 +16,31 @@ problem:
   label:
   primary_metric:
   constraints: []
+  contract_id:
+
+gates:
+  requirements: PENDING
+  feasibility: PENDING
+  data: PENDING
+  baseline: PENDING
+  evaluation: PENDING
+  delivery: PENDING
+
+gate_evidence:
+  requirements: []
+  feasibility: []
+  data: []
+  baseline: []
+  evaluation: []
+  delivery: []
+gate_notes: {}
+
+acceptance:
+  contract_id:
+  status: DRAFT
+  primary_metric:
+  target:
+  evidence_path:
 
 research_stage: INTAKE
 
@@ -48,10 +75,15 @@ findings: []
 failed_directions: []
 open_questions: []
 blockers: []
+budget:
+  scope:
+  used:
+  remaining:
+  stop_reason:
 
 decision_log: []
 
-next_action:
+next_action: Clarify the task and inspect existing project evidence.
 
 best_checkpoint:
 
@@ -60,4 +92,11 @@ reproduction:
   config:
   dataset:
   code_revision:
+  environment:
+
+artifacts:
+  feasibility:
+  data_audit:
+  evaluation_protocol:
+  delivery:
 ```

@@ -23,3 +23,7 @@ Typical tasks:
 - evaluation integration
 
 Do not redesign the whole codebase merely to fit a research method.
+
+Reuse an unmodified established implementation for the baseline when appropriate.
+Verify preprocessing/postprocessing, checkpoint loading, input/output contracts, and
+evaluator compatibility before expensive training. Version these with the model.

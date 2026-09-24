@@ -26,25 +26,23 @@ forcing the user through a fixed questionnaire.
 - Label semantics
 - Existing model
 - Existing data
-- Target metric
-- Compute
-- Runtime
+- Operating conditions and important subgroups
+- Target objective, metric, and acceptance threshold
+- Compute, time, storage, and runtime budget
 - Framework
 - Pretrained model availability
 - Required output artifact
+- Data rights, privacy, or safety constraints where relevant
 
-## Example
-
-User: “研究骨骼点遮挡分类算法”
-
-Ask first:
-
-1. Input: image / keypoint coordinates / keypoint + confidence / keypoint + image feature?
-2. Output: binary visible/occluded per keypoint / multiple occlusion levels?
-3. Existing pose estimator?
-4. Existing occlusion-labeled data?
+Also identify the unit of generalization: what must be unseen at test time (for example
+an identity, site, session, device, sequence, or future time). This determines the split
+and leakage audit. Do not assume random sample splitting is valid.
 
 Do not ask downstream product questions unless they affect the model itself.
+
+Translate the answers into a short research contract before broad research. Unknowns may
+remain, but each must say why it matters, how it will be resolved, and whether work can
+continue under an explicit assumption.
 
 ## Stop condition
 
